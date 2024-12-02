@@ -36,8 +36,8 @@ export interface ChatTopicSummary {
 }
 
 export interface ChatTopic extends Omit<BaseDataModel, 'meta'> {
-  favorite?: boolean;
-  historySummary?: string;
+  favorite?: boolean | null;
+  historySummary?: string | null;
   metadata?: ChatTopicMetadata;
   sessionId?: string;
   title: string;
