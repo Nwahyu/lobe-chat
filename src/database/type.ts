@@ -1,6 +1,6 @@
-import { PgliteDatabase } from 'drizzle-orm/pglite';
+import type { PgliteDatabase } from 'drizzle-orm/pglite';
 
-import * as schema from '../server/schemas/lobechat';
+import * as schema from './server/schemas/lobechat';
 
 export type LobeChatDatabaseSchema = typeof schema;
 

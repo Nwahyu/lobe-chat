@@ -1,7 +1,7 @@
 import { Column, count, inArray, sql } from 'drizzle-orm';
 import { and, desc, eq, exists, isNull, like, or } from 'drizzle-orm/expressions';
 
-import { LobeChatDatabase } from '@/database/server/type';
+import { LobeChatDatabase } from '@/database/type';
 
 import { NewMessage, TopicItem, messages, topics } from '../schemas/lobechat';
 import { idGenerator } from '../utils/idGenerator';
